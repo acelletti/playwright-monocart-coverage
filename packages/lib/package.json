@@ -16,21 +16,21 @@
     ".": {
       "import": {
         "types": "./dist/playwright.d.ts",
-        "default": "./dist/playwright.es.js"
+        "default": "./dist/playwright.js"
       },
       "require": {
         "types": "./dist/playwright.d.ts",
-        "default": "./dist/playwright.umd.js"
+        "default": "./dist/playwright.cjs"
       }
     },
     "./experimental-ct-vue": {
       "import": {
         "types": "./dist/experimental-ct-vue.d.ts",
-        "default": "./dist/experimental-ct-vue.es.js"
+        "default": "./dist/experimental-ct-vue.js"
       },
       "require": {
         "types": "./dist/experimental-ct-vue.d.ts",
-        "default": "./dist/experimental-ct-vue.umd.js"
+        "default": "./dist/experimental-ct-vue.cjs"
       }
     }
   },

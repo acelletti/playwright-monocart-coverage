@@ -8,7 +8,7 @@ export interface CoverageReportedFixtureArgs {
 function extendWithCoverage<TestArgs extends {}, WorkerArgs extends {}, T extends TestType<TestArgs, WorkerArgs>, E>(
   testBase: T,
   expect: E
-): { expect: E; test: TestType<TestArgs & CoverageReportedFixtureArgs, WorkerArgs & {}> } {
+): { test: T; expect: E } {
   const test = testBase.extend<CoverageReportedFixtureArgs>({
     // @ts-expect-error TS2353
     coverageReportedFixture: [
@@ -36,6 +36,7 @@ function extendWithCoverage<TestArgs extends {}, WorkerArgs extends {}, T extend
     ],
   });
 
+  // @ts-ignore
   return { test, expect };
 }
 
