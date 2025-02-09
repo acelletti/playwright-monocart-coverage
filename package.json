@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "lib": "yarn workspace playwright-monocart-coverage",
-    "vue": "yarn workspace example-vue"
+    "vue": "yarn workspace example-vue",
+    "react": "yarn workspace example-react"
   },
   "dependencies": {
     "prettier": "^3.5.0"

@@ -1,10 +1,10 @@
-import { defineConfig, devices } from '@playwright/experimental-ct-vue';
+import { defineConfig, devices } from '@playwright/experimental-ct-react';
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './src',
+  testDir: './',
   /* The base directory, relative to the config file, for snapshot files created with toMatchSnapshot and toHaveScreenshot. */
   snapshotDir: './__snapshots__',
   /* Maximum time one test can run for. */
@@ -23,7 +23,7 @@ export default defineConfig({
     [
       'monocart-reporter',
       {
-        name: 'Playwright CT Vue Report',
+        name: 'Playwright CT React Report',
         outputFile: 'docs/index.html',
         coverage: {
           entryFilter: () => true,
