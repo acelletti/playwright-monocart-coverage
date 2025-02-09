@@ -12,12 +12,12 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: googleapis/release-please-action@v2
+      - uses: googleapis/release-please-action@v4
         id: release
         with:
-          command: manifest
           token: ${{secrets.GITHUB_TOKEN}}
-          default-branch: main
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
 
       - name: Checkout Repository
         if: ${{ steps.release.outputs.releases_created }}
