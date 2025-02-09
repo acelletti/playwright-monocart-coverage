@@ -1,0 +1,9 @@
+{
+  "name": "playwright-monocart-coverage",
+  "version": "0.0.1",
+  "description": "A test coverage tool for Playwright that integrates with Monocart to generate detailed coverage reports.",
+  "main": "index.js",
+  "repository": "git@github.com:acelletti/playwright-monocart-coverage.git",
+  "author": "Andrea Celletti <celletti.andrea87@gmail.com>",
+  "license": "MIT"
+}
