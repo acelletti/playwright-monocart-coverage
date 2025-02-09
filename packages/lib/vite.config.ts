@@ -11,21 +11,24 @@ export default defineConfig({
       entry: [
         fileURLToPath(new URL('./src/playwright', import.meta.url)),
         fileURLToPath(new URL('./src/experimental-ct-react.ts', import.meta.url)),
+        fileURLToPath(new URL('./src/experimental-ct-svelte.ts', import.meta.url)),
         fileURLToPath(new URL('./src/experimental-ct-vue.ts', import.meta.url)),
       ],
     },
     rollupOptions: {
       external: [
         'monocart-reporter',
-        '@playwright/experimental-ct-vue',
         '@playwright/experimental-ct-react',
+        '@playwright/experimental-ct-svelte',
+        '@playwright/experimental-ct-vue',
         '@playwright/test',
       ],
       output: {
         globals: {
           'monocart-reporter': 'MonocartReporter',
-          '@playwright/experimental-ct-vue': 'PlaywrightExperimentalCtVue',
           '@playwright/experimental-ct-react': 'PlaywrightExperimentalCtVueReact',
+          '@playwright/experimental-ct-svelte': 'PlaywrightExperimentalCtVueSvelte',
+          '@playwright/experimental-ct-vue': 'PlaywrightExperimentalCtVue',
           '@playwright/test': 'PlaywrightTest',
         },
       },

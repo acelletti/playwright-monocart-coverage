@@ -26,16 +26,6 @@
         "default": "./dist/playwright.cjs"
       }
     },
-    "./experimental-ct-vue": {
-      "import": {
-        "types": "./dist/experimental-ct-vue.d.ts",
-        "default": "./dist/experimental-ct-vue.js"
-      },
-      "require": {
-        "types": "./dist/experimental-ct-vue.d.ts",
-        "default": "./dist/experimental-ct-vue.cjs"
-      }
-    },
     "./experimental-ct-react": {
       "import": {
         "types": "./dist/experimental-ct-react.d.ts",
@@ -44,6 +34,26 @@
       "require": {
         "types": "./dist/experimental-ct-react.d.ts",
         "default": "./dist/experimental-ct-react.cjs"
+      }
+    },
+    "./experimental-ct-svelte": {
+      "import": {
+        "types": "./dist/experimental-ct-svelte.d.ts",
+        "default": "./dist/experimental-ct-svelte.js"
+      },
+      "require": {
+        "types": "./dist/experimental-ct-svelte.d.ts",
+        "default": "./dist/experimental-ct-svelte.cjs"
+      }
+    },
+    "./experimental-ct-vue": {
+      "import": {
+        "types": "./dist/experimental-ct-vue.d.ts",
+        "default": "./dist/experimental-ct-vue.js"
+      },
+      "require": {
+        "types": "./dist/experimental-ct-vue.d.ts",
+        "default": "./dist/experimental-ct-vue.cjs"
       }
     }
   },
@@ -54,6 +64,7 @@
   },
   "devDependencies": {
     "@playwright/experimental-ct-react": "^1.50.1",
+    "@playwright/experimental-ct-svelte": "^1.50.1",
     "@playwright/experimental-ct-vue": "^1.50.1",
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.1",
