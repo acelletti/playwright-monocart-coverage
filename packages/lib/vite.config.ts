@@ -4,7 +4,7 @@ import dts from 'vite-plugin-dts';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [dts()],
+  plugins: [dts({ tsconfigPath: 'tsconfig.app.json' })],
   build: {
     lib: {
       name: 'sigma-components',

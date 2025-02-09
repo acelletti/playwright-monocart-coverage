@@ -51,7 +51,7 @@ export default defineConfig({
 ###  2⃣ Write a Test with Coverage
 
 #### React Example
-See a working example in [`package/example-react`](./package/example-react)
+See a working example in [`package/example-react`](./packages/example-react/src/App.spec.tsx)
 
 ```tsx
 import { test, expect } from 'playwright-monocart-coverage/experimental-ct-react';
@@ -64,7 +64,7 @@ test('should work', async ({ mount }) => {
 ```
 
 #### Vue Example
-See a working example in [`package/example-vue`](./package/example-vue)
+See a working example in [`package/example-vue`](./packages/example-vue/src/App.spec.ts)
 
 ```ts
 import { test, expect } from 'playwright-monocart-coverage/experimental-ct-vue';
