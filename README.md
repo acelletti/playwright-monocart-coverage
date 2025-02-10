@@ -1,5 +1,6 @@
 # Playwright Monocart Coverage
 
+![NPM Version](https://img.shields.io/npm/v/playwright-monocart-coverage)
 ![License](https://img.shields.io/github/license/acelletti/playwright-monocart-coverage)
 ![GitHub Stars](https://img.shields.io/github/stars/acelletti/playwright-monocart-coverage)
 
@@ -51,7 +52,7 @@ export default defineConfig({
 ###  2⃣ Write a Test with Coverage
 
 #### React Example
-See a working example in [`package/example-react`](./packages/example-react/src/App.spec.tsx)
+See a working example in [`package/example-react`](https://github.com/acelletti/playwright-monocart-coverage/blob/main/packages/example-react)
 
 ```tsx
 import { test, expect } from 'playwright-monocart-coverage/experimental-ct-react';
@@ -64,7 +65,7 @@ test('should work', async ({ mount }) => {
 ```
 
 #### Vue Example
-See a working example in [`package/example-vue`](./packages/example-vue/src/App.spec.ts)
+See a working example in [`package/example-vue`](https://github.com/acelletti/playwright-monocart-coverage/blob/main/packages/example-vue)
 
 ```ts
 import { test, expect } from 'playwright-monocart-coverage/experimental-ct-vue';
